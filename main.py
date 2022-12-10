@@ -1,5 +1,5 @@
 # IPT Dec 2022
-import vehicle_reg.py
+import vehicle_reg
 
 
 def project_main():
