@@ -1,4 +1,2 @@
-
-
-def validate_v_reg():
-    return True
+import get_vehicle_number
+import validate_vehicle
