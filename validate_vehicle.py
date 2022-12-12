@@ -7,7 +7,9 @@ def validate_vehicle_number(vno):
     :return: vehicle number -string
 
     """
-    if(vno[0:2].isalpha()) and (vno[2:6].isalnum()) and (vno[-4:].isdigit()):
+    vl = len(vno)
+    n = vl - 6
+    if(vno[0:2].isalpha()) and (vno[2:2 + n].isalnum()) and (vno[-4:].isdigit()):
             return True
     else:
            return False
