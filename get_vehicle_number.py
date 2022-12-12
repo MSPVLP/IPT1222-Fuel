@@ -3,7 +3,7 @@
 def get_vehicle_number():
     """
     This function get the vehicle number from user
-    return:It produces the veh_no
+    return:str- return the vehicle number entered by user
     """
     veh_no = input("Enter Your Vehicle Number:")
     return veh_no
