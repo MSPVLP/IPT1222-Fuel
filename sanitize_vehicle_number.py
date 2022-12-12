@@ -3,7 +3,7 @@
 def sanitize_vehicle_number(vehicle_number: str):
     """
     :param vehicle_number: str - It receives a vehicle number
-    :return: str - It returns the trimmed vehicle number
+    :return: str - It returns the vehicle number - (converted into upper case)
     """
     trimmed_veh_no = vehicle_number.strip()
     return trimmed_veh_no.upper()
