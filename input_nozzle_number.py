@@ -15,8 +15,12 @@ def input_nozzle_number():
 
 
 def validate_nozzle_number(nozzle_number):
-    """It validates the nozzle number.
-         If it is valid, return true."""
+    """
+    It validates the nozzle number.
+         If it is valid, return true.
+    :param nozzle_number: str-return the nozzle number
+    :return: true or false
+    """
 
     if MAX_Nozzle_Number >= nozzle_number > 0:
         return True
