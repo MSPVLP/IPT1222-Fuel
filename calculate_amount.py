@@ -3,9 +3,9 @@
 def calculate_amount(qty, tax, rate):
     """
 
-    :param qty:
-    :param tax:
-    :param rate:
+    :param qty:float
+    :param tax:int
+    :param rate:int
     :return:
     """
     amount = qty * rate + (rate * tax / 100)
