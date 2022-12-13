@@ -7,15 +7,13 @@ def validate_vehicle_number(vno):
     :return: vehicle number -string
 
     """
-    vl = len(vno)
-    n = vl - 6
-    if(vno[0:2].isalpha()) and (vno[2:2 + n].isalnum()) and (vno[-4:].isdigit()):
-            return True
+    if(vno[0:2].isalpha()) and (vno[2:].isalnum()) and (vno[-4:].isdigit()):
+        return True
     else:
-           return False
+        return False
 
 
-if __name__ == "__main__" :
+if __name__ == "__main__":
     res = validate_vehicle_number("TML5758")
 
     if res:
