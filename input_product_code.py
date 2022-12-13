@@ -28,6 +28,10 @@ def test_validate_product_code():
     assert validate_product_code("p10") == True
     assert validate_product_code("P  ") == False
     assert validate_product_code("   ") == False
+    assert validate_product_code("_p01") == False
+    assert validate_product_code("@p01")== False
+    assert  validate_product_code("#P1p")==False
+    assert validate_product_code("&p0p") == False
     print("All tests passed.")
 
 
