@@ -2,18 +2,24 @@
 
 def calculate_amount(qty, tax, rate):
     """
-
+    this function calculates the gross amount, tax amount, net amount
     :param qty:float
-    :param tax:int
-    :param rate:int
-    :return:
+    :param tax:float
+    :param rate:float
+    :return:List - gross amount, tax amount, net amount
     """
-    amount = qty * rate + (rate * tax / 100)
-    total_amount = round(amount, 2)
-    return total_amount
+
+    gross_amount = round(qty * rate, 2)
+    tax_amount = round(rate * tax/100, 2)
+    net_amount = round(gross_amount-tax_amount, 2)
+    return [gross_amount, tax_amount, net_amount]
+
+
+def test_calculate_amount():
+    print(calculate_amount(2.0, 12.2, 105.5))
 
 
 if __name__ == "__main__":
 
-    total = calculate_amount(2, 12, 100)
-    print(total)
+    test_calculate_amount()
+
