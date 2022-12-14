@@ -1,4 +1,4 @@
-MAX_Nozzle_Number = 12
+MAX_NOZZLE_NUMBER = 12
 
 
 def input_nozzle_number():
@@ -22,7 +22,7 @@ def validate_nozzle_number(nozzle_number):
     :return: true or false
     """
 
-    if MAX_Nozzle_Number >= nozzle_number > 0:
+    if MAX_NOZZLE_NUMBER >= nozzle_number > 0:
         return True
     else:
         return False
