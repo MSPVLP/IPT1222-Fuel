@@ -17,6 +17,7 @@ def calculate_amount(qty, tax, rate):
 
 def test_calculate_amount():
     print(calculate_amount(2.0, 12.2, 105.5))
+    print(calculate_amount(3, 10, 200))
 
 
 if __name__ == "__main__":
