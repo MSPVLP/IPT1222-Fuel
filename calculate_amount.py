@@ -6,13 +6,14 @@ def calculate_amount(qty, tax, rate):
     :param qty:float
     :param tax:float
     :param rate:float
-    :return:List - gross amount, tax amount, net amount
+    :return tuple - gross amount, tax amount, net amount
     """
 
     gross_amount = round(qty * rate, 2)
     tax_amount = round(rate * tax/100, 2)
-    net_amount = round(gross_amount-tax_amount, 2)
-    return [gross_amount, tax_amount, net_amount]
+    net_amount = gross_amount - tax_amount
+    amounts = (gross_amount, tax_amount, net_amount)
+    return amounts
 
 
 def test_calculate_amount():
